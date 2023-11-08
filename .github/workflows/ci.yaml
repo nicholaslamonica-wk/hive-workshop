@@ -16,5 +16,4 @@ jobs:
           curl -sSL https://graphql-hive.com/install.sh | sh
           hive schema:check ./subgraphs/accounts/src/main.ts  \
             --service accounts \
-            --registry.accessToken ${{ env.HIVE_TOKEN }} \
-            --github
+            --registry.accessToken ${{ env.HIVE_TOKEN }}
